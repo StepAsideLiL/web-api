@@ -7,11 +7,35 @@
   <title>Web API</title>
   <link rel="stylesheet" href="styles/simple.css">
   <script src="app.ts"></script>
+  <style>
+    [draggable="true"] {
+      cursor: pointer;
+    }
+
+    [dropzone="true"] {
+      min-height: 100px;
+      border: 1px solid #fff;
+    }
+  </style>
 </head>
 
 <body>
   <main>
+    <header>
+      <nav>
+        <ul style="gap: 30px;">
+          <li class="draggable" draggable="true">Big Text</li>
+          <li class="draggable" draggable="true">Medium Text</li>
+          <li class="draggable" draggable="true">Small Text</li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
     <h1>Hello, Web API</h1>
+
+    <div class="drop-target" dropzone="true"></div>
   </main>
 </body>
 
